@@ -1,0 +1,139 @@
+% CVPR 2022 Paper Template
+% based on the CVPR template provided by Ming-Ming Cheng (https://github.com/MCG-NKU/CVPR_Template)
+% modified and extended by Stefan Roth (stefan.roth@NOSPAMtu-darmstadt.de)
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%%%%%%%%% PAPER TYPE  - PLEASE UPDATE FOR FINAL VERSION
+%\usepackage[review]{cvpr}      % To produce the REVIEW version
+\usepackage{cvpr}              % To produce the CAMERA-READY version
+%\usepackage[pagenumbers]{cvpr} % To force page numbers, e.g. for an arXiv version
+
+% Include other packages here, before hyperref.
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+
+
+% It is strongly recommended to use hyperref, especially for the review version.
+% hyperref with option pagebackref eases the reviewers' job.
+% Please disable hyperref *only* if you encounter grave issues, e.g. with the
+% file validation for the camera-ready version.
+%
+% If you comment hyperref and then uncomment it, you should delete
+% ReviewTempalte.aux before re-running LaTeX.
+% (Or just hit 'q' on the first LaTeX run, let it finish, and you
+%  should be clear).
+\usepackage[pagebackref,breaklinks,colorlinks]{hyperref}
+
+
+% Support for easy cross-referencing
+\usepackage[capitalize]{cleveref}
+\crefname{section}{Sec.}{Secs.}
+\Crefname{section}{Section}{Sections}
+\Crefname{table}{Table}{Tables}
+\crefname{table}{Tab.}{Tabs.}
+
+
+%%%%%%%%% PAPER ID  - PLEASE UPDATE
+\def\cvprPaperID{*****} % *** Enter the CVPR Paper ID here
+\def\confName{CVPR}
+\def\confYear{2022}
+
+
+\begin{document}
+
+%%%%%%%%% TITLE - PLEASE UPDATE
+\title{Deep Learning with Little Data: Predicting Basketball Scores}
+
+\author{Rishabh Jain, Samarth Venkatesh \\
+University of Washington \\
+%Institution1 address\\
+%{\tt\small firstauthor@i1.org}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+% \and
+% Samarth Venkatesh\\
+% Institution2\\
+% First line of institution2 address\\
+% {\tt\small secondauthor@i2.org}
+}
+\maketitle
+
+%%%%%%%%% ABSTRACT
+%\begin{abstract}
+    %lorem ipsum
+%\end{abstract}
+
+%%%%%%%%% BODY TEXT
+
+%-------------------------------------------------------------------------
+\section{Abstract}
+
+Fill in later
+
+%-------------------------------------------------------------------------
+\section{Introduction}
+\label{sec:intro}
+
+Deep Learning often requires large amounts of data and training. As technology as improved,
+we have gained better systems such as GPT (ADD MORE) and others, in part due to the
+feasibility of large scale training becoming available. However, some tasks are inherently
+constrained by a lack of data. In this paper, we explore the applicability of Deep Learning
+to one such task: predicting the outcome of basketball games. Specifically, we aim to
+accurately predict the overall score of a match given the two teams playing against each other.
+
+Due to the nature of basketball, teams are subject to change every year and performance
+can be volatile. There is not guarantee that a team which performs well now will perform
+just as well 5 years into the future (CITE EXAMPLE). Although data data regarding teams
+may exist from many years back (CITE), it is hardly a good idea to use ancient statistics
+when training a model for today's use; in other words, technological advancements
+with regards to scaling won't allow for improvements in similar tasks constrained
+in data naturally.
+
+We aim to explore the possibility of using certain Deep Learning techniques (EXPAND)
+to predict basketball game outcomes despite the lack of available data. Finding the right
+features and hyperparameters will be of utmost importance since scalability is impossible.
+We hope the results will be useful in applying deep learning to other tasks with limited
+data availability (EXAMPLES?) and provide an insight into how ``rought draft'' models
+can be created before scaling up.
+
+%-------------------------------------------------------------------------
+\section{Related Work}
+
+
+%-------------------------------------------------------------------------
+\section{Technical Challenges}
+
+
+%-------------------------------------------------------------------------
+\section{Experiments}
+
+
+%-------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------
+
+
+%-------------------------------------------------------------------------
+
+
+%-------------------------------------------------------------------------
+
+
+
+%-------------------------------------------------------------------------
+
+
+%------------------------------------------------------------------------
+
+%%%%%%%%% REFERENCES
+{\small
+\bibliographystyle{ieee_fullname}
+\bibliography{references}
+}
+
+\end{document}
